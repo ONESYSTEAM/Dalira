@@ -1,49 +1,49 @@
-<!-- Display success messages -->
 <?php if (count($success) > 0) : ?>
+	<!-- Success Messages -->
 	<div class="alert alert-success p-2" role="alert">
-		<?php foreach ($success as $success) : ?>
+		<?php foreach ($success as $message) : ?>
 			<ul class="m-0">
 				<li>
-					<p class="small m-0"><?php echo $success ?></p>
+					<p class="small m-0"><?php echo htmlspecialchars($message, ENT_QUOTES, 'UTF-8'); ?></p>
 				</li>
 			</ul>
 		<?php endforeach ?>
 	</div>
 <?php endif ?>
 
-<!-- Display danger messages -->
 <?php if (count($invalid) > 0) : ?>
+	<!-- Error Messages -->
 	<div class="alert alert-danger p-2" role="alert">
-		<?php foreach ($invalid as $invalid) : ?>
+		<?php foreach ($invalid as $message) : ?>
 			<ul class="m-0">
 				<li>
-					<p class="small m-0"><?php echo $invalid ?></p>
+					<p class="small m-0"><?php echo htmlspecialchars($message, ENT_QUOTES, 'UTF-8'); ?></p>
 				</li>
 			</ul>
 		<?php endforeach ?>
 	</div>
 <?php endif ?>
 
-<!-- Display warning messages -->
 <?php if (count($warning) > 0) : ?>
+	<!-- Warning Messages -->
 	<div class="alert alert-warning p-2" role="alert">
-		<?php foreach ($warning as $warning) : ?>
+		<?php foreach ($warning as $message) : ?>
 			<ul class="m-0">
 				<li>
-					<p class="small m-0"><?php echo $warning ?></p>
+					<p class="small m-0"><?php echo htmlspecialchars($message, ENT_QUOTES, 'UTF-8'); ?></p>
 				</li>
 			</ul>
 		<?php endforeach ?>
 	</div>
 <?php endif ?>
 
-<!-- Display info messages -->
 <?php if (count($info) > 0) : ?>
+	<!-- Informational Messages -->
 	<div class="alert alert-info p-2" role="alert">
-		<?php foreach ($info as $info) : ?>
+		<?php foreach ($info as $message) : ?>
 			<ul class="m-0">
 				<li>
-					<p class="small m-0"><?php echo $info ?></p>
+					<p class="small m-0"><?php echo htmlspecialchars($message, ENT_QUOTES, 'UTF-8'); ?></p>
 				</li>
 			</ul>
 		<?php endforeach ?>
