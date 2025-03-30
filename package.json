@@ -1,0 +1,27 @@
+{
+  "name": "dalira",
+  "version": "1.0.1",
+  "description": "A lightweight PHP template for faster and easier web development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ONESYSTEAM/Dalira.git"
+  },
+  "keywords": [
+    "PHP",
+    "PHP",
+    "Template",
+    "Dalira",
+    "Web",
+    "Development"
+  ],
+  "author": "ONESYSTEAM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ONESYSTEAM/Dalira/issues"
+  },
+  "homepage": "https://github.com/ONESYSTEAM/Dalira#readme"
+}
