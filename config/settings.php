@@ -2,57 +2,40 @@
 
 return [
 
-    // ===================================================
-    // Global Configuration
-    // ---------------------------------------------------
-
-    /** 
-     * @var string Application name 
+    /**
+     * Global Configuration
      */
+
+    // Application name
     'app_name' => 'Dalira',
 
-    /** 
-     * @var string Short description of the application 
-     */
+    // Application description
     'app_description' => 'A lightweight PHP template for faster and easier web development.',
 
-    /** 
-     * @var string Keywords for SEO and search optimization 
-     */
+    // Keywords for search optimization
     'app_keywords' => 'PHP, PHP Template, Dalira, Web Development',
 
-    /** 
-     * @var string Author responsible for the application 
-     */
+    // Author of the application
     'app_author' => 'ONESYSTEAM',
 
-    /** 
-     * @var string Path to the application's favicon 
-     */
+    // Application favicon
     'app_icon' => 'public/img/favicon.ico',
 
-    // ===================================================
-    // Database Configuration
-    // ---------------------------------------------------
 
     /** 
-     * @var string Database host (e.g., localhost or IP address) 
+     * Database Configuration
      */
+
+    // Datasbase host (e.g., localhost or IP address)
     'host' => 'localhost',
 
-    /** 
-     * @var string Database username 
-     */
+    // Database username
     'user' => 'root',
 
-    /** 
-     * @var string Database password 
-     */
+    // Database password
     'pass' => '',
 
-    /** 
-     * @var string Database name 
-     */
-    'db' => 'dalira'
+    // Database name
+    'db' => ''
 
 ];
