@@ -8,16 +8,31 @@
  */
 class DBConnection
 {
-    // Database configuration settings.
+    /**
+     * @var array $settings Database configuration settings.
+     */
     private $settings;
 
-    // Database configuration settings
+    /**
+     * DBConnection constructor.
+     *
+     * @param array $settings Associative array containing database connection details:
+     *  - host: Database server hostname or IP.
+     *  - db: Database name.
+     *  - user: Database username.
+     *  - pass: Database password.
+     */
     public function __construct(array $settings)
     {
         $this->settings = $settings;
     }
 
-    // Establishes a database connection
+    /**
+     * Establishes a database connection.
+     *
+     * @return PDO Returns a PDO instance representing the database connection.
+     * @throws PDOException If the connection fails, an exception is thrown.
+     */
     public function connect(): PDO
     {
         $dsn = "mysql:host={$this->settings['host']};dbname={$this->settings['db']};charset=utf8mb4";

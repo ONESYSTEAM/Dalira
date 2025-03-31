@@ -1,19 +1,31 @@
 <?php
 
-// Initialize session management and enable output buffering.
+/**
+ * Initialize session management and enable output buffering.
+ * This ensures session data is accessible and output is controlled.
+ */
 session_start();
 ob_start();
 
-// Arrays to store different types of messages.
+/**
+ * Arrays to store different types of messages.
+ * Used for displaying notifications to the user.
+ */
 $invalid = [];  // Stores invalid/error messages
 $success = [];  // Stores success messages
 $warning = [];  // Stores warning messages
 $info = [];     // Stores informational messages
 
-// Load application-wide configuration settings.
+/** 
+ * Load application-wide configuration settings.
+ * This file contains global settings like app name, description, and other metadata.
+ */
 $settings = include(__DIR__ . '/../../config/settings.php');
 
-// Establish a database connection.
+/**
+ * Establish a database connection.
+ * This file contains database connection details and initialization.
+ */
 include(__DIR__ . '/../../config/database.php');
 
 ?>
