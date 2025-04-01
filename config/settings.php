@@ -6,7 +6,7 @@ return [
     'APP_DESCRIPTION' => 'A lightweight PHP template for faster and easier web development.',
     'APP_KEYWORDS' => 'PHP, PHP Template, Dalira, Web Development',
     'APP_AUTHOR' => 'ONESYSTEAM',
-    'APP_ICON' => 'public/img/favicon.ico',
+    'APP_ICON' => 'public/img/favicon.png',
 
     'DB_HOST' => 'localhost',
     'DB_USERNAME' => 'root',
