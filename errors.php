@@ -1,5 +1,4 @@
 <?php if (count($success) > 0) : ?>
-	<!-- Success Messages -->
 	<div class="alert alert-success p-2" role="alert">
 		<?php foreach ($success as $message) : ?>
 			<ul class="m-0">
@@ -12,7 +11,6 @@
 <?php endif ?>
 
 <?php if (count($invalid) > 0) : ?>
-	<!-- Error Messages -->
 	<div class="alert alert-danger p-2" role="alert">
 		<?php foreach ($invalid as $message) : ?>
 			<ul class="m-0">
@@ -25,7 +23,6 @@
 <?php endif ?>
 
 <?php if (count($warning) > 0) : ?>
-	<!-- Warning Messages -->
 	<div class="alert alert-warning p-2" role="alert">
 		<?php foreach ($warning as $message) : ?>
 			<ul class="m-0">
@@ -38,7 +35,6 @@
 <?php endif ?>
 
 <?php if (count($info) > 0) : ?>
-	<!-- Informational Messages -->
 	<div class="alert alert-info p-2" role="alert">
 		<?php foreach ($info as $message) : ?>
 			<ul class="m-0">
